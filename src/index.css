@@ -2,11 +2,22 @@ html,
 body,
 #root {
   height: 100%;
+  isolation: isolate;
 }
 
 body {
   background-color: hsl(180deg, 25%, 92%);
   margin: 0;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(195deg, 20%, 86%);
 }
 
 *,
